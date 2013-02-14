@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<script>
+		function validate Form()
+		{
+		var x=document.forms("Street Address 1")("street1").value;
+		if(x==null || x=="")
+			{
+			alert(Street Address 1 must be filled out");
+			return false;
+			}
+		}
+		function validate Form()
+		{
+		var x=document.forms("Street Address 2")("street2").value;
+		if(x==null || x=="")
+			{
+			alert(Street Address 2 must be filled out");
+			return false;
+			}
+		}
+	</script>
+		<title>
+			ISAT252 TEST
+		</title>
+			<h1 style="text-align: center; font-family: Cambria">ISAT 252 TEST</h1>
+			<h2 style="text-align: center; font-family: Cambria">TYPE INFO INTO CORRECT BLOCK
+	</head>
+	<body style="text-align: center; font-family: Cambria">
+		<form name="street1" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+		Street Address 1: <input type="text" name="street1">
+		<input type="submit" value="Submit">
+		</form>
+		<form name="street2" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+		Street Address 2: <input type="text" name="street2">
+		<input type="submit" value="Submit">
+		</form>		
+
+	</body>
+</html>
