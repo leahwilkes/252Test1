@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<title>252 Exam 1</title>
+		<h2 style="font-family: Cambria; text-align: center">ISAT 252 test</h2>
+		<br><br>
+		<h3 style="font-family: Cambria; text-align: center">List Information Below</h3>
+		<script>
+
+				function validateForm()
+				{
+				var x=document.forms["myForm"]["email"].value;
+				var atpos=x.indexOf("@");
+				var dotpos=x.lastIndexOf(".");
+				if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+				{
+				alert("Not a valid e-mail address");
+				return false;
+				}
+				}
+		</script>
+
+	</head>
+	<body style="font-family: Verdana; text-align: center">
+			Street Address 1<input type="text" name="street1">
+			<br><br>
+			Street Address 2<input type="text" name="street2">
+			<br><br>
+			City<input type="text" name="city">
+			<br><br>
+			State<input type="text" name="state">
+			<br><br>
+			Zip<input type="text" name="zip">
+			<br><br>
+			Home Phone Number<input type="text" name="phone number">
+			<br><br>
+			Cell Phone Number<input type="text" name="phone number">
+			<br><br>
+		<form name="myForm" action="demo_form.asp" onsubmit="return validateForm();" method="post">
+			Email: <input type="text" name="email">
+			<input type="submit" value="Submit">
+		</form>
+	<body>
+</html>
